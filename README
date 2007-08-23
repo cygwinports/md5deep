@@ -1,0 +1,65 @@
+md5deep
+------------------------------------------
+Md5deep is a suite of tools to compute hashes, or message digests for any
+number of files while optionally recursively digging through the directory
+structure.  It can also take a list of known hashes and display the
+filenames of input files whose hashes either do or do not match any of the
+known hashes.
+
+Runtime requirements:
+  cygwin-1.5.24-1
+
+Build requirements:
+  cygwin-1.5.24-1
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://md5deep.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/md5deep/
+
+-------------------------------------------
+
+Build instructions:
+  unpack md5deep-1.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./md5deep-1.13-X.cygport all
+
+This will create:
+  /usr/src/md5deep-1.13-X-src.tar.bz2
+  /usr/src/md5deep-1.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/md5deep.exe
+  /usr/bin/sha1deep.exe
+  /usr/bin/sha256deep.exe
+  /usr/bin/tigerdeep.exe
+  /usr/bin/whirlpooldeep.exe
+  /usr/share/doc/Cygwin/md5deep-1.13.README
+  /usr/share/doc/md5deep-1.13/Changes
+  /usr/share/doc/md5deep-1.13/README
+  /usr/share/man/man1/md5deep.1.gz
+  /usr/share/man/man1/sha1deep.1.gz
+  /usr/share/man/man1/sha256deep.1.gz
+  /usr/share/man/man1/tigerdeep.1.gz
+  /usr/share/man/man1/whirlpooldeep.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.13-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
