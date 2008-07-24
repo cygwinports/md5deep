@@ -1,0 +1,3 @@
+DESCRIPTION="Recursive message digest utility"
+HOMEPAGE="http://md5deep.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"

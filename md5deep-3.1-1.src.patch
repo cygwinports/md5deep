@@ -1,0 +1,20 @@
+Submitted upstream:
+http://sourceforge.net/tracker/index.php?func=detail&aid=2026326&group_id=67079&atid=516780
+
+--- origsrc/md5deep-3.1/md5deep/Makefile.am	2008-07-20 11:19:39.000000000 -0500
++++ src/md5deep-3.1/md5deep/Makefile.am	2008-07-23 21:24:15.531250000 -0500
+@@ -32,10 +32,10 @@
+ 	$(MAKE) install-man1
+ 
+ update-manpages: md5deep.1
+-	cp md5deep.1 sha1deep.1
+-	cp md5deep.1 sha256deep.1
+-	cp md5deep.1 tigerdeep.1
+-	cp md5deep.1 whirlpooldeep.1
++	cp $< sha1deep.1
++	cp $< sha256deep.1
++	cp $< tigerdeep.1
++	cp $< whirlpooldeep.1
+ 
+ man_MANS=md5deep.1 sha1deep.1 sha256deep.1 tigerdeep.1 whirlpooldeep.1
+ 
